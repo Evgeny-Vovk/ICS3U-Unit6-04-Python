@@ -14,7 +14,8 @@ def table_process(table, amount_of_numbers):
         for number in rows:
             sum += number
             average = sum / amount_of_numbers
-            print(" {0} ".format(number),end="")
+            print(" {0} ".format(number), end="")
+    print("")
     return average
 
 
@@ -44,7 +45,7 @@ def main():
         print("\nThe average of all numbers is {0:,.2f}.".format(average))
         print("")
 
-    except(ValueError):
+    except (ValueError):
         print("Invalid input, please try again.")
 
     print("\n\nDone.")
